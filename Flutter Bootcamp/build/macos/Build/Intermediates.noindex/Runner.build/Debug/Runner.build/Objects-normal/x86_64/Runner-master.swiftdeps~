@@ -1,0 +1,9 @@
+version: "Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)"
+options: "684541d733573cf3522680280856de4aa358d9edc4996cdbe7379b1d066b469a"
+build_start_time: [1671263761, 761409044]
+build_end_time: [1671263761, 984395980]
+inputs:
+  ? "/Users/khaytigupta/Desktop/Development/flutter Development/codePur/happy_birthday_mahi/macos/Flutter/GeneratedPluginRegistrant.swift"
+  : !private [1671263713, 578856706]
+  "/Users/khaytigupta/Desktop/Development/flutter Development/codePur/happy_birthday_mahi/macos/Runner/AppDelegate.swift": !private [1636629521, 291187763]
+  "/Users/khaytigupta/Desktop/Development/flutter Development/codePur/happy_birthday_mahi/macos/Runner/MainFlutterWindow.swift": !private [1636629521, 292744636]
