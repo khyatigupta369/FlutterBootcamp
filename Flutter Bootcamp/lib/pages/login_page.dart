@@ -33,6 +33,9 @@ class LoginPage extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
               child: Column(children: [
                 TextFormField(
+                  style: TextStyle(
+                    color: Colors.brown.shade100,
+                  ),
                   decoration: InputDecoration(
                     hintText: "Book",
                     hintStyle: TextStyle(
@@ -47,6 +50,9 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
                 TextFormField(
+                  style: TextStyle(
+                    color: Colors.brown.shade100,
+                  ),
                   obscureText: true,
                   decoration: InputDecoration(
                     hintText: "Author",
@@ -65,8 +71,10 @@ class LoginPage extends StatelessWidget {
                   height: 30.0,
                 ),
                 ElevatedButton(
-                  onPressed: () {},
                   child: Text("Read"),
+                  onPressed: () {
+                    print("Finding Book!");
+                  },
                 )
               ]),
             )
