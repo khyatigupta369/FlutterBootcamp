@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final String name = "Khyati";
+    final String name = "Mahi";
 
     return Scaffold(
       appBar: AppBar(
