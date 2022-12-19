@@ -1,16 +1,22 @@
 import 'package:flutter/material.dart';
 
+import '../utils/routes.dart';
+
 class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-        color: Colors.brown.shade800,
+      color: Colors.brown.shade800,
+      child: SingleChildScrollView(
         child: Column(
           children: [
             Padding(
               padding: const EdgeInsets.only(top: 60),
               child: SizedBox(
-                child: Image.asset("images/login.png", fit: BoxFit.cover),
+                child: Image.asset(
+                  "images/login.png",
+                  fit: BoxFit.cover,
+                ),
                 height: 300.0,
                 width: 300.0,
               ),
@@ -68,17 +74,22 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 30.0,
+                  height: 40.0,
                 ),
                 ElevatedButton(
+                  style: TextButton.styleFrom(
+                    minimumSize: Size(200, 30),
+                  ),
                   child: Text("Read"),
                   onPressed: () {
-                    print("Finding Book!");
+                    Navigator.pushNamed(context, MyRoutes.homeRoute);
                   },
                 )
               ]),
             )
           ],
-        ));
+        ),
+      ),
+    );
   }
 }

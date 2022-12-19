@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:happy_birthday_mahi/utils/routes.dart';
 import 'pages/home_page.dart';
 import 'pages/login_page.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -21,11 +22,12 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
+      debugShowCheckedModeBanner: false,
       // initialRoute: "/login",
       routes: {
         '/': (context) => LoginPage(),
-        '/home': (context) => HomePage(),
-        '/login': (context) => LoginPage(),
+        MyRoutes.homeRoute: (context) => HomePage(),
+        MyRoutes.loginRoute: (context) => LoginPage(),
       },
     );
   }
